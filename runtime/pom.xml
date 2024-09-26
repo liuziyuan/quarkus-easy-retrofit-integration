@@ -10,10 +10,35 @@
     <artifactId>quarkus-easy-retrofit-integration</artifactId>
     <name>Quarkus Easy Retrofit Integration - Runtime</name>
 
+
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-arc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.easyretrofit</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>${retrofit.spring.boot.starter.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.easyretrofit</groupId>
+            <artifactId>adapter-simple-body</artifactId>
+            <version>${retrofit.adapter.simple.body.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.squareup.retrofit2</groupId>
+            <artifactId>converter-jackson</artifactId>
+            <version>${retrofit.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.squareup.retrofit2</groupId>
+            <artifactId>adapter-guava</artifactId>
+            <version>${retrofit.version}</version>
         </dependency>
     </dependencies>
 
